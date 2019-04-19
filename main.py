@@ -26,7 +26,11 @@ def validate_signup():
 
     if username == '' or ' ' in username or len(username) < 3 or len(username) > 20: 
         username_error = "That's not a valid username (must be 3-20 characters, no spaces)"
+<<<<<<< HEAD
         username = ''
+=======
+        #username = ''
+>>>>>>> 40f23700435e316dc4582ca46be0eded42c5a463
     
     if password == '' or ' ' in password or len(password) < 3 or len(password) > 20: 
         password_error = "That's not a valid password (must be 3-20 characters, no spaces)"
@@ -46,7 +50,11 @@ def validate_signup():
 
     if a['@'] > 1 or a['.'] > 1 or ' ' in email or len(email) < 3 or len(email) > 20: 
         email_error = "That's not a valid email (must be 3-20 characters total, only 1 period(.) or @ allowed, no spaces allowed)"
+<<<<<<< HEAD
         email = ''       
+=======
+        #email = ''       
+>>>>>>> 40f23700435e316dc4582ca46be0eded42c5a463
     
     if password_error and verify_error and not username_error and not email_error: 
         username = request.form['username']
